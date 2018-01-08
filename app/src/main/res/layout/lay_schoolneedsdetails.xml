@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/lin_top"
+        layout="@layout/lay_top" />
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lin_top"
+        android:layout_above="@+id/relativeLayout">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <RelativeLayout
+
+                android:id="@+id/re_item"
+                android:layout_width="match_parent"
+                android:background="#F2F2F2"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    >
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<LinearLayout-->
+                            <!--android:layout_marginTop="@dimen/panding_10"-->
+                            <!--android:orientation="horizontal"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content">-->
+                            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:id="@+id/tv_schname"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:text=" 学生"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:textColor="#111111"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:textSize="@dimen/text_20"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                <!--&lt;!&ndash;/>&ndash;&gt;-->
+                        <!--</LinearLayout>-->
+
+                    <!--</RelativeLayout>-->
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/tv_schtime"
+                        android:text=" 发布时间："
+                        android:textSize="@dimen/text_18"
+                        android:textColor="@color/color_99"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:id="@+id/tv_parents_name"
+                        android:layout_marginTop="5dp"
+                        android:text="家长姓名："
+                        android:textSize="@dimen/text_18"
+                        android:textColor="@color/color_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tv_schphone"
+                        android:layout_marginTop="5dp"
+                        android:text="     手机号："
+                        android:textSize="@dimen/text_18"
+                        android:textColor="@color/color_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <LinearLayout
+
+                        android:layout_marginTop="@dimen/panding_5"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="        地址："
+                            android:textSize="@dimen/text_18"
+                            android:textColor="@color/color_11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textColor="@color/color_11"
+                            android:id="@+id/tv_sch_address"
+                            android:text=""
+                            android:textSize="@dimen/text_18"
+                            android:maxLines="4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_schsubjects"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/color_11"
+                        android:text="         科目："
+                        android:textSize="@dimen/text_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:id="@+id/tv_schgrade"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/color_11"
+                        android:text="         年级："
+                        android:textSize="@dimen/text_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:id="@+id/tv_schsex"
+                        android:layout_marginTop="5dp"
+                        android:text=" 性别要求："
+                        android:textSize="@dimen/text_18"
+                        android:textColor="@color/color_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:id="@+id/tv_schrecord"
+                        android:layout_marginTop="5dp"
+                        android:text=" 学历要求："
+                        android:textSize="@dimen/text_18"
+                        android:textColor="@color/color_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_sch_starttime"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/color_red"
+                        android:text=" 开课时间："
+                        android:textSize="@dimen/text_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_sch_time"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/color_11"
+                        android:text=" 上课时长："
+                        android:textSize="@dimen/text_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_sch_daynum"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/color_11"
+                        android:text=" 上课天数："
+                        android:textSize="@dimen/text_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/dashed"
+                        />
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="55dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    >
+                    <TextView
+                        android:id="@+id/tv_sch_price"
+                        android:textColor="#ff0000"
+                        android:text=""
+                        android:textSize="@dimen/text_20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        />
+                    <TextView
+                        android:id="@+id/tv_sch_totalcount"
+                        android:textColor="#ff0000"
+                        android:text=""
+                        android:textSize="@dimen/text_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F2F2F2"
+                />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="用户需求"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/text_18"
+                    android:textColor="@color/color_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/sch_connect"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="5dp"
+                    android:lineSpacingExtra="5dp"
+                    android:text=""
+                    android:textSize="@dimen/text_18"
+                    android:textColor="#666666"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F2F2F2"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#FFFFFF"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout">
+        <Button
+            android:id="@+id/btn_sch_rob_order"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            android:text="我要抢单"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_selector"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

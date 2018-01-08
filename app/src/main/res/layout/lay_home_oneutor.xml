@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/themecolor"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/lin_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/panding_15"
+            android:paddingRight="@dimen/panding_15">
+
+            <TextView
+                android:id="@+id/tv_honmecityname"
+                android:text="厦门"
+                android:textColor="@color/color_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@mipmap/nav_btn_dropdown" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/ll_home_search"
+            android:background="@drawable/bg_seach"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/lin_back"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:drawableLeft="@mipmap/index_btn_search"
+                android:drawablePadding="10dp"
+                android:paddingLeft="@dimen/panding_10"
+                android:paddingRight="@dimen/panding_5"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_99"
+                android:textSize="@dimen/text_14"
+                android:hint="输入工种或地址关键字搜索" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/home_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/home_recycler_view"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:scrollbars="none">
+        </android.support.v7.widget.RecyclerView>
+
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+
+</LinearLayout>

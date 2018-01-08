@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/lin_top"
+        layout="@layout/lay_top" />
+
+    <TextView
+
+        android:text="  为了验证您的身份，需向手机187****7654发送一条验证码，请点击下方按钮获取验证码。"
+        android:textColor="@color/color_66"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_uppay" />
+
+    <LinearLayout
+        android:background="@color/color_white"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="@dimen/panding_5"
+        android:layout_marginTop="@dimen/panding_5"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_yanz"
+            android:layout_marginLeft="@dimen/panding_15"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/panding_20"
+            android:paddingRight="@dimen/panding_20"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_item_demand"
+            android:text="获取验证码"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+
+            <EditText
+                android:id="@+id/edt_yanz"
+
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/color_white"
+                android:paddingBottom="@dimen/panding_15"
+                android:paddingLeft="@dimen/panding_10"
+                android:paddingRight="@dimen/panding_5"
+                android:paddingTop="@dimen/panding_15"
+                android:maxLines="1"
+                android:maxLength="6"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_99"
+                android:textSize="@dimen/text_16"
+                android:hint="输入验证码"
+               android:gravity="center_vertical"
+
+                />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/panding_10"
+        android:layout_marginRight="@dimen/panding_10"
+        android:layout_marginTop="@dimen/panding_50"
+        android:background="@drawable/bg_item_demand"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_18" />
+</LinearLayout>

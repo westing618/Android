@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorAcce">#ffecec</color>
+    <color name="colorA">#f8f8f8</color>
+    <color name="main_item_bg_select">#f7f7f7</color>
+    <color name="black">#333333</color>
+    <color name="white">#ffffff</color>
+    <color name="text_name_color">#a2a2a2</color>
+    <color name="color_f1">#f1f1f1</color>
+    <color name="black_7">#777777</color>
+    <color name="themecolor">#ff0000</color>
+    <color name="color_e7">#e7e7e7</color>
+    <color name="color_line">#BFBFBF</color>
+    <color name="color_reb">#ff0000</color>
+    <color name="color_99">#999999</color>
+    <color name="color_11">#111111</color>
+    <color name="color_66">#666666</color>
+    <color name="color_f2">#F2F2F2</color>
+
+    <color name="color_bf">#bfbfbf</color>
+
+
+    <color name="background">#F9F7F8</color>
+    <color name="color_title">#179cd8</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_eeeeee">#eeeeee</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_2c9df7">#2c9df7</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_c9c9c9">#c9c9c9</color>
+    <color name="color_red">#ff0000</color>
+    <color name="color_d5ebfd">#d5ebfd</color>
+    <color name="color_bbbbbb">#bbbbbb</color>
+    <color name="test_spacing2">#179641</color>
+
+    <color name="grey">#808080</color>
+    <color name="tab_gray">#ff999999</color>
+    <color name="tab_green">#ff45c01a</color>
+
+    <color name="pink">#ffeded</color>//粉红
+    <color name="green">#dff3ff</color>//蓝
+    <color name="gray">#f9f9f9</color>//灰
+    <color name="myInputPwdBase_blue">#0887ee</color>
+    <color name="myInputPwdBase_gray">#f0f0f6</color>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/lin_top"
+        layout="@layout/lay_top" />
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/bg_img_gold"
+            />
+
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="账户余额"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_333333"
+            />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_marginTop="10dp"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="￥0.00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/panding_10"
+            android:background="@color/color_f2" />
+        <Button
+            android:id="@+id/btn_payment"
+            android:textSize="18sp"
+            android:text="提现"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_item_demand"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+            />
+        <Button
+            android:id="@+id/btn_tixpaymen"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:text="我的银行卡"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_ka"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+            />
+    </LinearLayout>
+</LinearLayout>

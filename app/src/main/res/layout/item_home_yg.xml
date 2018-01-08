@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/homeitem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginLeft="12dp"
+        android:text="2017-02-09 09:00"
+        android:textSize="20sp"
+        android:textColor="#111111"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/tv_home_time"
+        />
+
+    <RelativeLayout
+        android:id="@+id/re_item"
+        android:layout_width="match_parent"
+        android:background="#F2F2F2"
+        android:layout_height="140dp">
+
+        <!--<com.ztd.yyb.view.XCRoundImageView-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:id="@+id/imageView_home"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:src="@mipmap/list_icon_user" />-->
+
+        <ImageView
+            android:id="@+id/imageView_home"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/list_icon_user"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toEndOf="@+id/imageView_home">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="@dimen/panding_15"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tv_title"
+                        android:text="新城小区三栋 两房一厅精装修"
+                        android:textColor="#111111"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+
+                        android:id="@+id/tv_home_work"
+                        android:text="工种：水电工"
+                        android:textSize="16sp"
+                        android:textColor="#111111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/image_type"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </RelativeLayout>
+
+
+
+
+
+            <TextView
+
+                android:id="@+id/tv_home_daynum"
+                android:textColor="@color/color_66"
+                android:text="用工天数："
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+
+                />
+
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:id="@+id/tv_home_starttime"
+                android:textColor="@color/color_reb"
+                android:text="到场时间："
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_3"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/color_66"
+                    android:text="地址："
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/tv_home_address"
+                    android:textColor="@color/color_66"
+                    android:text="厦门市思明区万翔国际商务中心厦门市思明区万翔国际商务中心"
+                    android:textSize="16sp"
+                    android:maxLines="2"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/button"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_home_price"
+                    android:textColor="#ff0000"
+                    android:text="价格：￥"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_add_price"
+                    android:textColor="#ff0000"
+
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_home_totalcount"
+                android:textColor="#ff0000"
+                android:text="（共计：）"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+
+        <Button
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="立即抢单"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_item_demand"
+            android:textColor="#ffffff"
+            android:id="@+id/button"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F2F2F2"
+        />
+
+</LinearLayout>

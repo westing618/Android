@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/select_deman_recycler_view"-->
+        <!--android:background="@color/color_white"-->
+        <!--android:layout_marginTop="45dp"-->
+        <!--android:layout_marginLeft="50dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+    <!--</android.support.v7.widget.RecyclerView>-->
+    <ExpandableListView
+        android:layout_marginTop="45dp"
+        android:id="@+id/id_elv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:groupIndicator="@null"
+        android:dividerHeight="0.5dp"
+        android:footerDividersEnabled="false"
+        >
+    </ExpandableListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_white"
+        />
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_chongzhi"
+            android:text="重置"
+            android:background="@color/colorAccent"
+            android:textColor="@color/color_white"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:text="确定"
+            android:background="@color/color_reb"
+            android:textColor="@color/color_white"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

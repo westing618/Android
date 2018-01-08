@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "D:\\android\\work\\Androidyg\\Android\\easeui\\build\\intermediates\\res\\merged\\debug\\menu\\em_context_contact_list.xml",
+        "source": "D:\\android\\work\\Androidyg\\Android\\easeui\\res\\menu\\em_context_contact_list.xml"
+    },
+    {
+        "merged": "F:\\QG\\Android\\easeui\\build\\intermediates\\res\\merged\\debug\\menu\\em_delete_message.xml",
+        "source": "F:\\QG\\Android\\easeui\\res\\menu\\em_delete_message.xml"
+    },
+    {
+        "merged": "D:\\android\\work\\Androidyg\\Android\\easeui\\build\\intermediates\\res\\merged\\debug\\menu\\em_delete_message.xml",
+        "source": "D:\\android\\work\\Androidyg\\Android\\easeui\\res\\menu\\em_delete_message.xml"
+    },
+    {
+        "merged": "D:\\android\\work\\Androidyg\\Android\\easeui\\build\\intermediates\\res\\merged\\debug\\menu\\em_remove_from_blacklist.xml",
+        "source": "D:\\android\\work\\Androidyg\\Android\\easeui\\res\\menu\\em_remove_from_blacklist.xml"
+    },
+    {
+        "merged": "F:\\QG\\Android\\easeui\\build\\intermediates\\res\\merged\\debug\\menu\\em_context_tab_contact.xml",
+        "source": "F:\\QG\\Android\\easeui\\res\\menu\\em_context_tab_contact.xml"
+    },
+    {
+        "merged": "F:\\QG\\Android\\easeui\\build\\intermediates\\res\\merged\\debug\\menu\\em_delete_contact.xml",
+        "source": "F:\\QG\\Android\\easeui\\res\\menu\\em_delete_contact.xml"
+    },
+    {
+        "merged": "F:\\QG\\Android\\easeui\\build\\intermediates\\res\\merged\\debug\\menu\\em_remove_from_blacklist.xml",
+        "source": "F:\\QG\\Android\\easeui\\res\\menu\\em_remove_from_blacklist.xml"
+    },
+    {
+        "merged": "D:\\android\\work\\Androidyg\\Android\\easeui\\build\\intermediates\\res\\merged\\debug\\menu\\em_context_tab_contact.xml",
+        "source": "D:\\android\\work\\Androidyg\\Android\\easeui\\res\\menu\\em_context_tab_contact.xml"
+    },
+    {
+        "merged": "F:\\QG\\Android\\easeui\\build\\intermediates\\res\\merged\\debug\\menu\\em_context_contact_list.xml",
+        "source": "F:\\QG\\Android\\easeui\\res\\menu\\em_context_contact_list.xml"
+    },
+    {
+        "merged": "D:\\android\\work\\Androidyg\\Android\\easeui\\build\\intermediates\\res\\merged\\debug\\menu\\em_delete_contact.xml",
+        "source": "D:\\android\\work\\Androidyg\\Android\\easeui\\res\\menu\\em_delete_contact.xml"
+    }
+]

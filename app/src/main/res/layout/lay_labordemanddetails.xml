@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <include
+        android:id="@+id/lin_top"
+        layout="@layout/lay_top" />
+
+
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lin_top"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/relativeLayout">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <RelativeLayout
+
+                android:id="@+id/re_item"
+                android:layout_width="match_parent"
+                android:background="#F2F2F2"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    >
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/panding_10"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <!--<TextView-->
+                                <!--android:id="@+id/tv_labtitle"-->
+                                <!--android:text=" 新城小区三栋 两房一厅精装修"-->
+                                <!--android:textColor="#111111"-->
+                                <!--android:textSize="@dimen/text_20"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--/>-->
+                            <TextView
+                                android:id="@+id/tv_labtitletime"
+                                android:text="发布时间："
+                                android:textSize="@dimen/text_18"
+                                android:textColor="@color/color_99"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+
+                        </LinearLayout>
+                        <ImageView
+                            android:id="@+id/image_labtype"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_labtitlename"
+                        android:layout_marginTop="5dp"
+                        android:text="业主姓名："
+                        android:textSize="@dimen/text_18"
+                        android:textColor="@color/color_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tv_labtitlephone"
+                        android:layout_marginTop="5dp"
+                        android:text="     手机号："
+                        android:textSize="@dimen/text_18"
+                        android:textColor="@color/color_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <LinearLayout
+
+                        android:layout_marginTop="@dimen/panding_5"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="        地址："
+                            android:textSize="@dimen/text_18"
+                            android:textColor="@color/color_11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textColor="@color/color_11"
+                            android:id="@+id/tv_labtitleaddress"
+                            android:text=""
+                            android:textSize="@dimen/text_18"
+                            android:maxLines="4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/color_11"
+                        android:id="@+id/tv_labhome_work"
+                        android:text=" 需要工种："
+                        android:textSize="@dimen/text_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/tv_lab_starttime"
+                        android:textColor="@color/color_red"
+                        android:text=" 到场时间："
+                        android:textSize="@dimen/text_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:id="@+id/tv_labnum"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/color_11"
+                        android:text=" 用工人数："
+                        android:textSize="@dimen/text_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/tv_lab_daynum"
+                        android:textColor="@color/color_11"
+                        android:text=" 用工天数："
+                        android:textSize="@dimen/text_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/dashed"
+                        />
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="55dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    >
+                    <TextView
+                        android:id="@+id/tv_lab_price"
+                        android:textColor="#ff0000"
+                        android:text="价格：￥150/小时"
+                        android:textSize="@dimen/text_20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        />
+                    <TextView
+                        android:id="@+id/tv_lab_totalcount"
+                        android:textColor="#ff0000"
+                        android:text="（共计：￥3000元）"
+                        android:textSize="@dimen/text_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F2F2F2"
+                />
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="用户需求"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/text_18"
+                    android:textColor="@color/color_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/tv_lab_connect"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="5dp"
+                    android:lineSpacingExtra="5dp"
+                    android:text=""
+                    android:textSize="@dimen/text_18"
+                    android:textColor="#666666"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F2F2F2"
+                />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_imagname"
+                android:text="图片概述"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="@dimen/text_18"
+                android:textColor="@color/color_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!--<LinearLayout-->
+                <!--android:visibility="gone"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_marginLeft="8dp"-->
+                    <!--android:layout_marginRight="8dp"-->
+                    <!--android:layout_marginBottom="8dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/imageone"-->
+                        <!--android:background="#F2F2F2"-->
+                        <!--android:scaleType="centerInside"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                <!--</RelativeLayout>-->
+                <!--<RelativeLayout-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_marginLeft="8dp"-->
+                    <!--android:layout_marginRight="8dp"-->
+                    <!--android:layout_marginBottom="8dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/imagetwo"-->
+                        <!--android:scaleType="centerInside"-->
+                        <!--android:background="#F2F2F2"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                <!--</RelativeLayout>-->
+                <!--<RelativeLayout-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_marginLeft="8dp"-->
+                    <!--android:layout_marginRight="8dp"-->
+                    <!--android:layout_marginBottom="8dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/imagethree"-->
+                        <!--android:background="#F2F2F2"-->
+                        <!--android:scaleType="centerInside"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                <!--</RelativeLayout>-->
+
+            <!--</LinearLayout>-->
+            <!--<android.support.v7.widget.RecyclerView-->
+
+                <!--android:id="@+id/recyclerView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:choiceMode="singleChoice"-->
+                <!--android:divider="@null"-->
+                <!--android:fadingEdge="none"-->
+                <!--android:listSelector="@android:color/transparent"-->
+                <!--android:scrollbarStyle="outsideOverlay"-->
+                <!--app:layoutManager="android.support.v7.widget.GridLayoutManager"-->
+                <!--app:spanCount="3"-->
+                <!--tools:listitem="@layout/list_item_image"-->
+
+                <!--/>-->
+            <android.support.v7.widget.RecyclerView
+
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                app:spanCount="3"
+                tools:listitem="@layout/list_item_image"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout">
+        <Button
+            android:id="@+id/btn_la_rob_order"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            android:text="我要抢单"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_selector"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+            />
+    </RelativeLayout>
+</RelativeLayout>

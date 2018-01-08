@@ -1,0 +1,185 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.ztd.yyb"
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 2
+        versionName "1.2"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY : "34226b4135b68620fa13daef", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+        ]
+    }
+
+
+    buildscript {
+        repositories {
+            jcenter()
+        }
+    }
+
+    allprojects {
+        repositories {
+            jcenter()
+        }
+    }
+
+    //配置keystore签名
+    signingConfigs {
+
+        release {
+
+//            storeFile file("debug.keystore")
+//            storePassword "android"
+//            keyAlias "androiddebugkey"
+//            keyPassword "android"
+
+//            storeFile file('C:\\Users\\Administrator\\Desktop\\ygb\\code\\Android\\app.ygb.jks')//C:\Users\Administrator\Desktop\ygb\code\Android\app
+            storeFile file('ygb.jks')//C:\Users\Administrator\Desktop\ygb\code\Android\app
+            storePassword "ztd123456"
+            keyPassword "ztd123456"
+            keyAlias "mygb"
+
+
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+
+    buildTypes {
+
+        release {
+
+            debuggable true
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // 自定义输出配置
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        // 输出apk名称为wooyun_v1.0_wandoujia.apk
+                        def fileName = "ygbv${defaultConfig.versionName}${variant.productFlavors[0].name}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+
+        }
+
+
+    }
+//    // 移除lint检查的error
+//    lintOptions {
+//        abortOnError false
+//    }
+//    buildTypes {
+////        debug {
+////            signingConfig signingConfigs.release
+////        }
+//        release {
+//            signingConfig signingConfigs.release
+//        }
+//    }
+
+//友盟多渠道打包   在AndroidStudio窗口左下角打开Terminal面板，输入gradlew assembleRelease命令
+    productFlavors {
+        kuan {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "kuan"]
+        }
+        xiaomi {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "xiaomi"]
+        }
+        qh360 {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "qh360"]
+        }
+        baidu {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "baidu"]
+        }
+        wandoujia {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "wandoujia"]
+        }
+    }
+}
+
+configurations {
+
+//    all*.exclude group: 'com.android.support', module: 'support-v4'
+
+//    all*.exclude group:'com.android.support', module:'support-annotations'
+
+}
+
+dependencies {
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.github.d-max:spots-dialog:0.4@aar'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.bartoszlipinski.recyclerviewheader:library:1.2.0'
+    compile files('libs/fastjson_1.1.43.android.jar')
+    compile 'com.android.support:recyclerview-v7:25.1.0'
+    compile 'com.squareup.okhttp3:okhttp:3.5.0'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'io.reactivex:rxjava:1.1.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'com.github.dfqin:grantor:1.0.1'
+    //动态权限申请
+    compile 'com.cjj.materialrefeshlayout:library:1.3.0'
+    compile project(':imagepicker')
+    //图片选择
+    compile project(':pickerview')
+    //地址选择，城市选择
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'cn.bingoogolapple:bga-refreshlayout:1.1.7@aar'
+    //刷新加载
+    compile 'cn.pedant.sweetalert:library:1.3'
+    //加载的转圈圈， 弹框 ，
+
+    //   compile 'com.lzy.widget:imagepicker:0.5.0'  //指定版本 图片选择
+    compile files('libs/Msc.jar')
+    //环信EaseUI
+    compile 'com.android.support:multidex:1.0.1'
+    compile project(':easeui')
+    compile files('libs/alipaySdk-20170309.jar')
+    compile files('libs/libammsdk.jar')
+    compile 'com.jaeger.statusbaruitl:library:1.0.0'
+    //沉浸式状态栏/状态栏变色
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
+    compile 'com.facebook.fresco:fresco:0.12.0'
+    compile 'cn.jiguang.sdk:jpush:3.0.5'
+    // 此处以JPush 3.0.5 版本为例。
+    compile files('libs/jcore-android_v1.1.2.jar')
+    compile 'com.yanzhenjie.nohttp:okhttp:1.1.2'
+    compile 'top.zibin:Luban:1.0.5'
+    //Luban(鲁班)——Android图片压缩工具，仿微信朋友圈压缩策略
+    compile project(':share')
+    //material风格，ios风格，传入context构建，在任意界面弹出，以及dialog样式的activity
+    compile 'com.github.glassLake:DialogUtils:1.0.2'
+
+    compile 'com.lcodecorex:tkrefreshlayout:1.0.7'//刷新加载
+//    compile 'cn.qtt:librarycallshow:1.6.9' 黄琳琳sdk
+
+}

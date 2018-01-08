@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/lin_top"
+        layout="@layout/lay_top" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F2F2F2"
+        />
+    <LinearLayout
+        android:id="@+id/ll_ownecoupon"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优惠券"
+            android:layout_weight="1"
+            android:textColor="@color/color_11"
+            android:textSize="@dimen/text_16" />
+
+        <TextView
+            android:id="@+id/tv_ownecoupon"
+            android:textColor="@color/black_7"
+            android:textSize="@dimen/text_16"
+            android:text="未使用优惠券"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/list_btn_right"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F2F2F2"
+        />
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="付款金额："
+            android:layout_weight="0.1"
+            android:textColor="@color/color_11"
+            android:textSize="@dimen/text_16" />
+
+        <TextView
+            android:id="@+id/pay_money"
+            android:textColor="@color/themecolor"
+            android:textSize="@dimen/text_23"
+            android:hint="￥"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            />
+        <TextView
+            android:visibility="invisible"
+            android:textColor="@color/themecolor"
+            android:textSize="@dimen/text_16"
+            android:hint="(已优惠50元)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F2F2F2"
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:text="付款方式"
+        android:textSize="18sp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/textView2" />
+
+    <LinearLayout
+        android:id="@+id/lin_ail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/panding_15"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="@dimen/panding_10"
+            android:src="@mipmap/list_logo_zhifubao"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_16"
+            android:layout_weight="1"
+            android:text="支付宝"
+            android:textColor="@color/black"/>
+        <ImageView
+            android:id="@+id/img_ali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/list_btn_check_sel"/>
+    </LinearLayout>
+    <include layout="@layout/lay_line"/>
+    <LinearLayout
+        android:id="@+id/lin_wx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/panding_15"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="@dimen/panding_10"
+            android:src="@mipmap/list_logo_wchat"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_16"
+            android:layout_weight="1"
+            android:text="微信支付"
+            android:textColor="@color/black"/>
+        <ImageView
+            android:id="@+id/img_wx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/list_btn_checked_nor"/>
+    </LinearLayout>
+    <include layout="@layout/lay_line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/panding_15"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="@dimen/panding_10"
+            android:src="@mipmap/list_icon_yue"/>
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="@dimen/text_16"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="余额支付(余额不足)"-->
+            <!--android:textColor="@color/black"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_16"
+            android:layout_weight="1"
+            android:text="余额支付"
+            android:textColor="@color/black"/>
+        <ImageView
+            android:id="@+id/img_ye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/list_btn_checked_nor"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        >
+
+        <Button
+            android:id="@+id/btn_payment"
+            android:textSize="18sp"
+            android:text="立即付款"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_item_demand"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+            />
+    </RelativeLayout>
+</LinearLayout>

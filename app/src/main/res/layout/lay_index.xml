@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@color/themecolor"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="46dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/panding_10"
+            android:layout_marginRight="@dimen/panding_10"
+            android:layout_gravity="center"
+            android:text="厦门"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_15" />
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/nav_btn_dropdown"/>
+<View
+    android:layout_width="wrap_content"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/panding_10"
+                android:layout_marginRight="@dimen/panding_10"
+                android:layout_marginTop="@dimen/panding_5"
+                android:layout_marginBottom="@dimen/panding_5"
+                android:layout_gravity="center"
+                android:background="@drawable/index_bold"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/text_18"
+                    android:paddingLeft="@dimen/panding_20"
+                    android:paddingRight="@dimen/panding_20"
+                    android:text="装修"/>
+                <TextView
+                    android:textSize="@dimen/text_18"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="@dimen/panding_20"
+                    android:paddingRight="@dimen/panding_20"
+                    android:background="@drawable/indexnorright_bold"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/themecolor"
+                    android:text="学堂"/>
+
+
+            </LinearLayout>
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/panding_10"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/nav_btn_serach"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/panding_10"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/text_18"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/themecolor"
+            android:text="我是业主"/>
+            <View
+                android:layout_width="@dimen/margin_0.5"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@color/color_bf"
+                />
+        <TextView
+            android:layout_weight="1"
+            android:textSize="@dimen/text_18"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="我是师傅"/>
+    </LinearLayout>
+    <View
+        android:layout_height="@dimen/margin_0.5"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/color_bf"
+        />
+
+</LinearLayout>

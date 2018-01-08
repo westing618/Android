@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">用工贝</string>
+    <string name="select_img">从相册选择</string>
+    <string name="soft_update_no">已经是最新版本</string>
+    <string name="soft_update_title">软件更新</string>
+    <string name="soft_update_info">检测到新版本，立即更新吗</string>
+    <string name="soft_update_updatebtn">更新</string>
+    <string name="soft_update_later">稍后更新</string>
+    <string name="soft_updating">正在更新</string>
+    <string name="soft_update_cancel">取消</string>
+    <string name="pull_to_refresh_from_bottom_pull_label">向上拉动可以刷新</string>
+    <string name="pull_to_refresh_from_bottom_release_label">松开可以刷新</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">加载中&#8230;</string>
+    <string name="take_camera">拍照</string>
+    <!-- WXPayEntryActivity -->
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="app_tip">提示</string>
+    <string name="cancel">取消</string>
+    <string name="alipay_pay_RSA_PRIVATE">MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDDI6d306Q8fIfCOaTXyiUeJHkrIvYISRcc73s3vF1ZT7XN8RNPwJxo8pWaJMmvyTn9N4HQ632qJBVHf8sxHi/fEsraprwCtzvzQETrNRwVxLO5jVmRGi60j8Ue1efIlzPXV9je9mkjzOmdssymZkh2QhUrCmZYI/FCEa3/cNMW0QIDAQAB</string>
+    <string name="alipay_pay_RSA_PRIVATE2">MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCRE/ldVLs7N0Jm4eUs9owu+T7O5G89/gndAOfaki+F5OL7qgIgwCiHmXEPqj9asgtauLxNaZU7T28O6XxJnpwuL1UhrYS+ZMF7AN0OdbY36YQcGvCHFOPTRLfCdbBXEGs2WlHJv18YFgGzaUyYBdW8NUkxIGddyquVrbImc09zswIDAQAB</string>
+
+    <string name="permission_get_accounts_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_GET_ACCOUNTS</string>
+    <string name="permission_read_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_PHONE_STATE</string>
+    <string name="permission_call_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_CALL_PHONE</string>
+    <string name="permission_camera_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_CAMERA</string>
+    <string name="permission_access_fine_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_FINE_LOCATION</string>
+    <string name="permission_access_coarse_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_COARSE_LOCATION</string>
+    <string name="permission_read_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_EXTERNAL_STORAGE</string>
+    <string name="permission_white_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_WRITE_EXTERNAL_STORAGE</string>
+    <string name="permission_recode_audio_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_RECORD_AUDIO</string>
+
+    <string-array name="languages">
+        <item>师傅 </item>
+        <item>家教</item>
+    </string-array>
+    <string-array name="lang">
+        <item>业主 </item>
+        <item>家长</item>
+    </string-array>
+
+
+    <string name="text_tts_source">科大讯飞作为中国最大的智能语音技术提供商，在智能语音技术领域有着长期的研究积累，并在中文语音合成、语音识别、口语评测等多项技术上拥有国际领先的成果。科大讯飞是我国唯一以语音技术为产业化方向的“国家863计划成果产业化基地”…</string>
+
+    <string formatted="false" name="tts_toast_format">缓冲进度为%d%%，播放进度为%d%%</string>
+
+</resources>

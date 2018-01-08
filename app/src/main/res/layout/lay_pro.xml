@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/lin_top"
+            layout="@layout/lay_top" />
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/logo"
+            />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/panding_10"
+            android:text=""
+            android:layout_gravity="center"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/text_18" />
+
+        <TextView
+            android:id="@+id/tv_connevt"
+            android:padding="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我副书记发哦回房间就欧i甲方iOS迪佛就设计爱疯加哦iOS阿娟覅偶 我佛教是东方既欧舒丹佛圣诞节覅偶"
+            android:textScaleX="1.1"
+            android:lineSpacingExtra="5dp"
+            android:layout_gravity="center"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/text_18" />
+
+    </LinearLayout>
+    <!--android:textScaleX="1.2f"-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="25dp"
+        android:paddingTop="@dimen/panding_10"
+        android:text="版权所有:今日用工(厦门)科技有限公司"
+        android:textColor="@color/color_66"
+        android:textSize="@dimen/text_18"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView3" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="1dp"
+        android:paddingTop="@dimen/panding_10"
+        android:text="语音技术由科大讯飞提供"
+        android:textColor="@color/color_66"
+        android:textSize="@dimen/text_18"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        />
+
+</RelativeLayout>

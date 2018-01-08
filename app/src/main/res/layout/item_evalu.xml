@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:descendantFocusability="blocksDescendants"
+    android:id="@+id/ll_itemdemand"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:background="@color/color_bf"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_0.5"
+        />
+    <TextView
+        android:textSize="20sp"
+        android:background="@color/color_f2"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/re_item"
+        android:background="#F8F8F8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.ztd.yyb.view.XCRoundImageView
+            android:id="@+id/imageView"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/list_icon_user"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toEndOf="@+id/imageView"
+
+            >
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/panding_15"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_evtitle"
+                    android:text="新城小区三栋 两房一厅精装修"
+                    android:textColor="#111111"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <RatingBar
+                    android:id="@+id/evratingBar"
+                    style="@style/MyRatingBartwo"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/color_66"
+                    android:text="陈先生："
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_evname"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_ev_address"
+                    android:textColor="@color/color_66"
+                    android:text="2017-02-21"
+                    android:textSize="16sp"
+                    android:maxLines="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_evconnect"
+        android:layout_marginTop="@dimen/panding_5"
+        android:layout_marginLeft="@dimen/panding_10"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:textColor="@color/color_11"
+        android:text="  陈师傅技术不错也很负责人陈师傅技术不错也很负责人陈师傅技术不错也很负责人"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+
+</LinearLayout>

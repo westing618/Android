@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_itemhometutor"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_home_tutor_time"
+        android:layout_marginLeft="6dp"
+        android:text="2017-02-09 09:00"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/re_item"
+        android:background="#F8F8F8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.ztd.yyb.view.XCRoundImageView
+            android:id="@+id/image_tutor"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/list_icon_user" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toEndOf="@+id/image_tutor">
+
+            <!--<TextView-->
+                <!--android:visibility="gone"-->
+                <!--android:text="学生"-->
+                <!--android:textColor="#111111"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/tv_studentname" />-->
+
+            <LinearLayout
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:textColor="#999999"
+                    android:id="@+id/tv_class"
+                    android:text="年级："
+                    android:textSize="@dimen/text_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                   />
+                <TextView
+                    android:textColor="#999999"
+                    android:id="@+id/tv_subjects"
+                    android:text="科目："
+                    android:textSize="@dimen/text_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="6dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#999999"
+                    android:id="@+id/tv_sex"
+                    android:layout_weight="1"
+                    android:text="性别要求："
+                    android:textSize="@dimen/text_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:textColor="#999999"
+                    android:id="@+id/tv_education"
+                    android:layout_weight="1"
+                    android:text="  学历要求："
+                    android:textSize="@dimen/text_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="6dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#999999"
+                    android:id="@+id/tv_classtime"
+                    android:layout_weight="1"
+                    android:text="上课时长："
+                    android:textSize="@dimen/text_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:textColor="#999999"
+                    android:id="@+id/tv_classdays"
+                    android:layout_weight="1"
+                    android:text="上课天数："
+                    android:textSize="@dimen/text_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginBottom="6dp"
+                android:textColor="#999999"
+                android:id="@+id/tv_home_tutor_starttime"
+                android:text="开课时间："
+                android:textSize="@dimen/text_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               />
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="6dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="地址："
+                    android:textColor="#999999"
+                    android:textSize="@dimen/text_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:textColor="#999999"
+                    android:id="@+id/tv_home_tutor_address"
+                    android:text=""
+                    android:textSize="@dimen/text_16"
+                    android:maxLines="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/button"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <TextView
+                android:id="@+id/tv_home_price"
+                android:textColor="#ff0000"
+                android:text="价格：￥/小时"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+            <TextView
+                android:id="@+id/tv_home_totalcount"
+                android:textColor="#ff0000"
+                android:text="（共计：￥元）"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+        <Button
+
+            android:id="@+id/btn_hometutor"
+
+            android:visibility="invisible"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:text="立即抢单"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_btn_selector"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F8F8F8"
+        />
+
+</LinearLayout>

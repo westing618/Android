@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/lin_top"
+        layout="@layout/lay_top" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F2F2F2"
+        />
+    <LinearLayout
+        android:id="@+id/ll_shifu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="师傅资格认证"
+            android:layout_weight="1"
+            android:textColor="@color/color_11"
+            android:textSize="@dimen/text_16" />
+
+        <TextView
+            android:id="@+id/tv_sfstate"
+            android:textColor="@color/color_11"
+            android:textSize="@dimen/text_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/list_btn_right"
+            />
+
+    </LinearLayout>
+    <include layout="@layout/lay_line"/>
+    <LinearLayout
+        android:id="@+id/ll_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="家教资格认证"
+            android:layout_weight="1"
+            android:textColor="@color/color_11"
+            android:textSize="@dimen/text_16" />
+
+        <TextView
+            android:id="@+id/tv_jjstate"
+            android:textColor="@color/color_11"
+            android:textSize="@dimen/text_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/list_btn_right"
+            />
+
+    </LinearLayout>
+    <include layout="@layout/lay_line"/>
+</LinearLayout>

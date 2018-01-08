@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/color_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/lin_top"
+        layout="@layout/lay_top" />
+
+    <TextView
+        android:textColor="@color/themecolor"
+        android:id="@+id/textView16"
+        android:layout_marginTop="28dp"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:text="恭喜！抢单成功！"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:visibility="invisible"
+        android:textColor="@color/color_99"
+        android:id="@+id/textView18"
+        android:layout_marginTop="12dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="您第一次抢单享受系统赠送优惠券"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_chakan"
+            android:textColor="@color/color_66"
+            android:background="@drawable/bg_repair"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="查看订单"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:textSize="@dimen/text_25"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            />
+        <TextView
+            android:id="@+id/tv_backhome"
+            android:background="@drawable/bg_repair"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="回到首页"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/text_25"
+            />
+
+    </LinearLayout>
+    >
+
+</LinearLayout>

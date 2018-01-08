@@ -1,0 +1,68 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="text_size_more">20sp</dimen>
+    <dimen name="margin_0.5">0.5dp</dimen>
+    <dimen name="margin_1">1dp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="panding_5">5dp</dimen>
+    <dimen name="panding_6">6dp</dimen>
+    <dimen name="panding_10">10dp</dimen>
+    <dimen name="panding_12">12dp</dimen>
+    <dimen name="panding_15">15dp</dimen>
+    <dimen name="panding_18">18dp</dimen>
+    <dimen name="panding_20">20dp</dimen>
+    <dimen name="panding_25">25dp</dimen>
+    <dimen name="panding_28">28dp</dimen>
+    <dimen name="panding_30">30dp</dimen>
+    <dimen name="panding_34">34dp</dimen>
+    <dimen name="panding_38">38dp</dimen>
+    <dimen name="panding_45">45dp</dimen>
+    <dimen name="panding_50">50dp</dimen>
+    <dimen name="panding_70">70dp</dimen>
+
+    <dimen name="text_10">10sp</dimen>
+    <dimen name="text_11">11sp</dimen>
+    <dimen name="text_12">12sp</dimen>
+    <dimen name="text_13">13sp</dimen>
+    <dimen name="text_14">14sp</dimen>
+    <dimen name="text_15">15sp</dimen>
+    <dimen name="text_16">16sp</dimen>
+    <dimen name="text_17">17sp</dimen>
+    <dimen name="text_18">18sp</dimen>
+    <dimen name="text_19">19sp</dimen>
+    <dimen name="text_20">20sp</dimen>
+    <dimen name="text_21">21sp</dimen>
+    <dimen name="text_22">22sp</dimen>
+    <dimen name="text_23">23sp</dimen>
+    <dimen name="text_24">24sp</dimen>
+    <dimen name="text_25">25sp</dimen>
+    <dimen name="text_26">26sp</dimen>
+    <dimen name="text_27">27sp</dimen>
+    <dimen name="text_70">70sp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+
+
+    <dimen name="small">5dp</dimen>
+    <dimen name="middle">10dp</dimen>
+    <dimen name="large">15dp</dimen>
+    <dimen name="large_large">20dp</dimen>
+
+    <dimen name="test_padding_margin">0dp</dimen>
+
+
+
+    <dimen name="section_padding">7dp</dimen>
+    <dimen name="section_text_size">20sp</dimen>
+    <dimen name="item_height">100dp</dimen>
+    <dimen name="item_margin">3dp</dimen>
+
+
+    <dimen name="gudieview_width">6dp</dimen>
+    <dimen name="gudieview_heigh">6dp</dimen>
+
+</resources>

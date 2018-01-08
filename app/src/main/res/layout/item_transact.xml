@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+
+        >
+
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_marginRight="@dimen/text_10"
+            android:text="-0"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/color_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            >
+
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:maxLines="1"
+                android:textColor="@color/color_11"
+                android:text="新城小区三栋3栋 两房一厅精装修"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_tran_title"
+                />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="2018-1-10 11:00"
+                android:textSize="16sp"
+                android:padding="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_tran_time"
+                android:textColor="@color/color_99"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_0.5"
+        android:background="#55CDCDCD"
+        />
+
+</LinearLayout>

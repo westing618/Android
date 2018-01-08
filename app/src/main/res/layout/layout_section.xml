@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_0.5"
+        android:background="@color/color_bf"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+
+            android:id="@+id/text_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@color/color_white"
+            android:padding="@dimen/section_padding"
+            android:text=""
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/section_text_size" />
+
+        <TextView
+
+            android:id="@+id/text_stititle"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+
+            android:background="@color/color_white"
+            android:padding="@dimen/section_padding"
+            android:text=""
+            android:textColor="@color/color_red"
+            android:textSize="18sp"
+
+            />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.9"
+            android:gravity="center"
+            >
+
+            <!--<ImageView-->
+
+                <!--android:id="@+id/iv_img_parent_right"-->
+                <!--android:layout_width="18dp"-->
+                <!--android:layout_height="10dp"-->
+                <!--android:background="@mipmap/list_icon_down"-->
+                <!--android:checked="true"-->
+                <!--android:padding="@dimen/section_padding"-->
+                <!--android:textOff=""-->
+                <!--android:textOn="" />-->
+            <ImageView
+                android:id="@+id/iv_img_parent_right"
+                android:layout_width="18dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
